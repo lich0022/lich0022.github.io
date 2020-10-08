@@ -36,7 +36,7 @@ nav ul a:focus{
     background: black;
 }
 
-li:nth-child(odd){
+aside li:nth-child(odd){
     background-color: lightskyblue;
 }
 
