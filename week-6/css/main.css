@@ -45,7 +45,13 @@ Shortcut for adding the comment Control + / or Command /
      background-size: cover;
      /* additional styles to make text visible */
      color: white;
-     font-size: 20px; 
+    /* updating font-size to rem 1.5 x 16 = 24 */ 
+    font-size: 1.5rem;
+    /*  adding padding to add space between the border and content */
+    padding: 1em;
+    /* 1em = 1x24 - 24px */
+    /* add ing width using viewport width unti */
+    width: 50vw;
      
  }
 
@@ -152,4 +158,24 @@ Adding a style using class name
 specificity: 0011 */
  footer.site-footer{
     background-color: lightgreen;
+}
+
+/* CSS box model */
+section p {
+    width: 50%;
+    padding: 1em;
+    /* padding: 1em; */
+    
+    /* top right bottom left */
+    /* padding: 1em 5em 1em 5em; */
+    padding: 1em .5em;
+
+    /* margin: 2em; */
+    /* 2em = 2 x 16 = 32 */
+
+    /* top right bottom left */
+    margin: -1em 2em 2em 2em;
+
+    /* border 2px solid black */
+    border-bottom: 2px solid black;
 }
