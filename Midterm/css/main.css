@@ -4,7 +4,13 @@ body{
     background-color: #aad4cf
 }
 
-
+main{
+    background-color: rgba(255,255,255,0.6);
+    border: 0px solid black;
+    padding: 1.4em;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .container{
     max-width: 1024px;
@@ -22,6 +28,11 @@ img{
 nav{
     text-transform: uppercase;
     text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    border: 0px solid black;
+    padding: 1.4em;
+    width: 100%;
+    box-sizing: border-box;
     
 }
 
@@ -54,14 +65,20 @@ nav ul li:last-child {
 }
 
 form {
-    background-color: rgba(255,255,255,0.6);
+    background-color: none;
     border: 1px solid black;
     padding: 1.4em;
     width: 100%;
     box-sizing: border-box;
+    
 }
 
 footer{
     padding: 20px;
     text-align: right;
+    background-color: rgba(255,255,255,0.6);
+    border: 0px solid black;
+    padding: 1.4em;
+    width: 100%;
+    box-sizing: border-box;
 }
