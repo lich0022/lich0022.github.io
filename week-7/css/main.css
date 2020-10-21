@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+    /* Adding background image */
+    background-image: url("../images/white_brick_wall.png");
+}
+
+/*
+This is a CSS Comment
+Shortcut for adding the comment Control + / or Command /
+ */
+
+ h1{
+     color:white;
+ }
+ p{
+     background-color: lightblue;
+ }
+ h1,
+ h2,
+ h3, 
+ h4 {
+     text-decoration: underline;
+ }
+ /* Selecting child elements */
+ nav ul{
+     list-style: none;
+ }
+ /* Selecting child elements multiple level */
+ nav ul a{
+     color: darkslategrey;
+     text-decoration: none;
+ }
+
+ /* selecting HTML element with class name */
+ .orange-text{
+     background: darkslategrey;
+     color: orange;
+     text-decoration: none;
+ }
+ /* selecting id value for styling element */
+ #tow{
+     /* color image repeat x-axis y-axis */
+     background: orange url("../images/bread.jpg") no-repeat center center;
+     background-size: cover;
+     /* additional styles to make text visible */
+     color: white;
+    /* updating font-size to rem 1.5 x 16 = 24 */ 
+    font-size: 1.5rem;
+    /*  adding padding to add space between the border and content */
+    padding: 1em;
+    /* 1em = 1x24 - 24px */
+    /* add ing width using viewport width unti */
+    width: 50vw;
+     
+ }
+
+ /* we can add multiple classes to one element */
+ .large-text {
+     font-size: 20px;
+ }
+ /* Child selector or Direct Child Selector 
+ Selecting only the p directly inside the article*/
+ article>p {
+     font-size: 24px;
+     font-weight: bold;
+     /* values light, normal, bold, bolder, OR 100, 200, 300, 400... */
+     line-height: 1.5;
+     text-transform: lowercase;
+     text-align: center;
+ }
+ /* Adjacent Sibling Selector 
+ selecting only ul that is a adjacent to h3 */
+ h3+ul{
+     border: 1px solid black;
+ }
+/* Attribute Selector
+Selectiong Element that has attribute of href set to value #tow */
+[href="#tow"]{
+    font-weight: bold;
+}
+[target="_blank"]{
+    text-transform: uppercase;
+}
+
+/* using pseudo classes
+styling navigation */
+nav ul a,
+nav ul a:link
+nav ul a:visited{
+    background: orange;
+    /* horizontal verticle blur spread colour */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
+
+nav ul a:active{
+    /* horizontal verticle blur spread color */
+    box-shadow: 0 0 4px 2px black;
+}
+/* postiton related selectors */
+/* first-child selector */
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+/* last-child selectors */
+section ol li:last-child{
+    font-weight: bold;
+}
+/* collapse table border into one */
+table{
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    /* hex value for color with 6 characters */
+    background-color: #d5836c;
+}
+/* using the nth-child with n.
+where n is 0,1,2,... until number of elements */
+table th:nth-child(n),
+table td:nth-child(n){
+    /* hex color value with 3 characters */
+    border: 1px solid #000;
+}
+
+/* 2n+1 will be 1,3,5,7,.... */
+
+table td:nth-child(2n+1){
+    background: rgba(0, 0, 0, .2)
+}
+
+footer {
+    background: aqua;
+}
+
+footer {
+    background: red;
+}
+
+/* specificity 0002 */
+body footer {
+    background: cornflowerblue;
+}
+
+/*
+Adding a style using class name 
+ specificity: 0010 */
+ .site-footer{
+     background-color: orange;
+ }
+/* adding a style using class name and tag name 
+specificity: 0011 */
+ footer.site-footer{
+    background-color: lightgreen;
+}
+
+/* CSS box model */
+section p {
+    width: 50%;
+    padding: 1em;
+    /* padding: 1em; */
+    
+    /* top right bottom left */
+    /* padding: 1em 5em 1em 5em; */
+    padding: 1em .5em;
+
+    /* margin: 2em; */
+    /* 2em = 2 x 16 = 32 */
+
+    /* top right bottom left */
+    margin: -1em 2em 2em 2em;
+
+    /* border 2px solid black */
+    border-bottom: 2px solid black;
+}
