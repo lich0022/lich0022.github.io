@@ -3,12 +3,29 @@ body {
     color: darkslategrey;
     /* Adding background image */
     background-image: url("../images/white_brick_wall.png");
+    padding-top: 82px;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 /*
 This is a CSS Comment
 Shortcut for adding the comment Control + / or Command /
  */
+
+ /* html {
+     border: 1px solid red;
+ }
+ * {
+     border: inherit;
+ }
+
+ nav {
+     border-color: blue;
+ } */
+ 
 
  h1{
      color:white;
@@ -23,23 +40,63 @@ Shortcut for adding the comment Control + / or Command /
      text-decoration: underline;
  }
  /* Selecting child elements */
+ 
+ nav ul li{
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
  nav ul{
      list-style: none;
  }
  /* Selecting child elements multiple level */
  nav ul a{
+     display: block;
      color: darkslategrey;
      text-decoration: none;
  }
 
+
  /* selecting HTML element with class name */
  .orange-text{
+     padding: 1.5em;
+     width: 300px;
+     display: block;
      background: darkslategrey;
      color: orange;
      text-decoration: none;
  }
+
+/* Two column layout using float */
+article,
+aside {
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid black;
+    padding: 1.4em;
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+}
+img{
+    width: 100%;
+}
+
+aside {
+    width: 20%;
+}
+
+section {
+    clear: both;
+}
+.orange-text.large-text{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
  /* selecting id value for styling element */
  #tow{
+     position: relative;
      /* color image repeat x-axis y-axis */
      background: orange url("../images/bread.jpg") no-repeat center center;
      background-size: cover;
@@ -48,7 +105,7 @@ Shortcut for adding the comment Control + / or Command /
     /* updating font-size to rem 1.5 x 16 = 24 */ 
     font-size: 1.5rem;
     /*  adding padding to add space between the border and content */
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     /* 1em = 1x24 - 24px */
     /* add ing width using viewport width unti */
     width: 50vw;
@@ -81,6 +138,14 @@ Selectiong Element that has attribute of href set to value #tow */
 }
 [target="_blank"]{
     text-transform: uppercase;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* using pseudo classes
