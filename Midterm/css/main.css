@@ -32,9 +32,10 @@ nav{
     border: 0px solid black;
     padding: 1.4em;
     width: 100%;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
+
+
 
 nav ul a{
     color: black;
@@ -47,7 +48,7 @@ h1{
     background-size: cover;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     padding: 100px;
     margin: 0;
 }
@@ -71,7 +72,26 @@ form {
     padding: 1.4em;
     width: 100%;
     box-sizing: border-box;
-    
+}
+
+.name {
+    width: 900px;
+}
+
+.email {
+    width: 900px;
+}
+
+.message {
+    height: 100px;
+}
+
+.message {
+    width: 900px
+}
+
+section div {
+    padding: 1%;
 }
 
 footer{
