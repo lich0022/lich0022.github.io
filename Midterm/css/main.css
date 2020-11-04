@@ -26,8 +26,9 @@ img{
 
 nav{
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
+    font-size: 24px;
     background-color: rgba(255,255,255,0.6);
     border: 0px solid black;
     padding: 1.4em;
