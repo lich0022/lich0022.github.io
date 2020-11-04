@@ -54,6 +54,16 @@ h1{
     margin: 0;
 }
 
+h1, h2, h3{
+    font-weight: normal;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+
 nav ul li{
     display: inline-block;
     margin:: 0;
