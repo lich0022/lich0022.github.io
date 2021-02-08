@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <!-- adding header body content -->
+    <body>
+        <div class="container">
+            <header class="masthead">
+             <img src="images/logo.png" alt="logo" class="logo">
+           </header>   
+        </div> 
+        <!-- adding main body content -->
+        <main>
+            <img src="images/scooter.svg" alt="scooter" class="scooter" >
+            <h1>Want to be your own boss?</h1>
+            <p>
+            Start today and make up to $30/hr driving your own vehicle with Dash!
+            </p>
+
+            <section class="apply">
+                <div class="application"><h2>Apply Now</h2>
+                <p>
+                    Enter your info below to get started.
+                </p>
+
+                <form action="apply.html" method="post">
+                    <div>
+                        <label for="firstname"></label>
+                        <input type="text" name="firstname" id="firstname" class="firstname" placeholder="First Name">
+                    </div>
+                    <div>
+                        <label for="lastname"></label>
+                        <input type="text" name="lastname" id="lastname" class="lastname" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" name="emailaddress" id="emailaddress" required class="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <label for="phonenumber"></label>
+                        <input type="text" name="phonenumber" id="phonenumber" class="number" placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <label for="yes">I agree to dash terms</label>
+                            <input type="radio" id="yes" name="past">
+                    </div>
+                            <button class="drive" type="submit">DRIVE WITH US</button>
+                            <p>Already applied?</p> 
+                            <p class="check">Check your application status here.</p>
+            </section>
+        </div>
+        </main>
+
+        <footer class="footer">
+            <h3>
+                See how much you can earn with Dash.
+            </h3>
+          <p>
+             how many hours do you want to drive with us this week?
+         </p>
+         <section class="Contact">
+                <div>
+                    <label for="hours"></label>
+                    <input type="text" name="hours" id="hours" class="hours" placeholder="Hours">
+                </div>
+                <div>
+                    <label for="city"></label>
+                    <input type="text" name="city" id="city" required class="city" placeholder="City">
+                </div>
+                <button class="calculate" type="submit">CALCULATE</button>
+
+                <section class="socials">
+                <img src="images/instagram.svg" alt="instagram" class="insta"> 
+                <img src="images/twitter.svg" alt="twitter" class="twitter">
+                <img src="images/facebook.svg" alt="facebook" class="facebook">
+                <img src="images/linkedin.svg" alt="linkedin" class="linkedin">
+            </section>
+
+         </footer>
+        </body>
+        
+    </html>

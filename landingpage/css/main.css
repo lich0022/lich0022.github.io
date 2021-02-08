@@ -1,0 +1,126 @@
+/* html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+.display: block;
+}{*/
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #f7f7ff;
+}
+
+
+
+.logo{
+    width: 125px;
+}
+
+.scooter{
+    width: 285px;
+    display: block;
+    margin: auto;
+}
+
+
+.drive{
+    text-decoration: none;
+    background-color: #57eeab;
+    color: #333131;
+    border-radius: 6px;
+    border: #57eeab;
+}
+
+.apply{
+    border: 1px solid #333131;
+    border-radius: 20px;
+    background-color: white;
+    float: right;
+    box-shadow: 0 3px 6px 0 black;
+    font-family: 'Montserrat', sans-serif;
+    width: 15%;
+}
+
+/* .application{ 
+    box-shadow: 0 3px 6px 0 black;
+}*/
+
+.check{
+    color: #ff8480;
+}
+
+.calculate{
+    text-decoration: none;
+    background-color: #ff8480;
+    color: #f7f7ff;
+    border-radius: 6px;
+    border: #ff8480;
+}
+
+.hours{
+    background-color: #f7f7ff;
+    border-radius: 6px;
+    border: #f7f7ff;
+}
+
+.city{
+    background-color: #f7f7ff;
+    border-radius: 6px;
+    border: #f7f7ff;
+}
+
+
+
+.footer{
+    background-color: #fffd8c;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+	html {
+	  font-size: 16px;
+	}
+  
+	body{
+		max-width: 100%;
+        margin: auto;
+    }
