@@ -60,6 +60,9 @@ body{
     margin: auto;
 }
 
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .drive{
     text-decoration: none;
@@ -70,10 +73,10 @@ body{
 }
 
 .apply{
-    border: 1px solid #333131;
+    border: 1px solid transparent;
     border-radius: 20px;
     background-color: white;
-    float: right;
+    /* float: right; */
     box-shadow: 0 3px 6px 0 black;
     font-family: 'Montserrat', sans-serif;
     width: 15%;
@@ -85,6 +88,30 @@ body{
 
 .check{
     color: #ff8480;
+}
+
+.firstname{
+    background-color: #f7f7ff;
+    border-radius: 6px;
+    border: #f7f7ff;
+}
+
+.lastname{
+    background-color: #f7f7ff;
+    border-radius: 6px;
+    border: #f7f7ff;
+}
+
+.email{
+    background-color: #f7f7ff;
+    border-radius: 6px;
+    border: #f7f7ff;
+}
+
+.number{
+    background-color: #f7f7ff;
+    border-radius: 6px;
+    border: #f7f7ff;
 }
 
 .calculate{
