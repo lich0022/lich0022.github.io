@@ -48,7 +48,9 @@ body{
     background-color: #f7f7ff;
 }
 
-
+.start{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .logo{
     width: 125px;
@@ -70,17 +72,24 @@ h1{
     color: #333131;
     border-radius: 6px;
     border: #57eeab;
+    font-weight: bold;
+    padding: 4%;
+    margin: 2%;
 }
 
 .apply{
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: white;
-    /* float: right; */
     box-shadow: 0 3px 6px 0 black;
     font-family: 'Montserrat', sans-serif;
-    width: 15%;
+    width: 50%;
+    padding: 1.4em;
 }
+
+/* section div { 
+    padding: 4%;
+}*/
 
 /* .application{ 
     box-shadow: 0 3px 6px 0 black;
@@ -94,24 +103,32 @@ h1{
     background-color: #f7f7ff;
     border-radius: 6px;
     border: #f7f7ff;
+    padding: 4%;
+    margin: 3%;
 }
 
 .lastname{
     background-color: #f7f7ff;
     border-radius: 6px;
     border: #f7f7ff;
+    padding: 4%;
+    margin: 3%;
 }
 
 .email{
     background-color: #f7f7ff;
     border-radius: 6px;
     border: #f7f7ff;
+    padding: 4%;
+    margin: 3%;
 }
 
 .number{
     background-color: #f7f7ff;
     border-radius: 6px;
     border: #f7f7ff;
+    padding: 4%;
+    margin: 3%;
 }
 
 .calculate{
@@ -120,18 +137,21 @@ h1{
     color: #f7f7ff;
     border-radius: 6px;
     border: #ff8480;
+    padding: 1.5%;
 }
 
 .hours{
     background-color: #f7f7ff;
     border-radius: 6px;
     border: #f7f7ff;
+    padding: 1.5%;
 }
 
 .city{
     background-color: #f7f7ff;
     border-radius: 6px;
     border: #f7f7ff;
+    padding: 1.5%;
 }
 
 
