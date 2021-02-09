@@ -50,13 +50,15 @@ body{
 
 .start{
     font-family: 'Montserrat', sans-serif;
+    color: #333131;
+    font-size: ;
 }
 
-.logo{
+.mobilelogo{
     width: 125px;
 }
 
-.scooter{
+.mobilescooter{
     width: 285px;
     display: block;
     margin: auto;
@@ -64,6 +66,8 @@ body{
 
 h1{
     font-family: 'Montserrat', sans-serif;
+    color: #333131;
+    font-size: 65px;
 }
 
 .drive{
@@ -83,8 +87,10 @@ h1{
     background-color: white;
     box-shadow: 0 3px 6px 0 black;
     font-family: 'Montserrat', sans-serif;
-    width: 50%;
+    width: 60%;
     padding: 1.4em;
+    margin: 0 auto;
+    color: #333131;
 }
 
 /* section div { 
@@ -95,6 +101,8 @@ h1{
     box-shadow: 0 3px 6px 0 black;
 }*/
 
+
+/* adding mobile apply section */
 .check{
     color: #ff8480;
 }
@@ -131,6 +139,7 @@ h1{
     margin: 3%;
 }
 
+/* adding footer button */
 .calculate{
     text-decoration: none;
     background-color: #ff8480;
@@ -139,7 +148,7 @@ h1{
     border: #ff8480;
     padding: 1.5%;
 }
-
+ /* footer section */
 .hours{
     background-color: #f7f7ff;
     border-radius: 6px;
@@ -151,15 +160,32 @@ h1{
     background-color: #f7f7ff;
     border-radius: 6px;
     border: #f7f7ff;
-    padding: 1.5%;
+    padding: 1.5%; 
 }
 
-
+.contact{
+    margin: 0 auto;
+}
 
 .footer{
     background-color: #fffd8c;
     font-family: 'Montserrat', sans-serif;
 }
+
+h3{
+    padding: 3%;
+}
+
+.calculator{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.socials{
+    padding: 2%;
+}
+
 
 /* desktop */
 @media screen and (min-width: 768px) {
@@ -170,4 +196,66 @@ h1{
 	body{
 		max-width: 100%;
         margin: auto;
+        background-image: url("../images/scooter.svg");
+        background-repeat: no-repeat;
+        background-position: center;
     }
+    /* removing mobile scooter */
+    .mobilescooter{
+        display: none;
+    }
+    /* removing mobile logo */
+    .mobilelogo{
+        padding-left: 4em;
+    }
+    /* adjusting apply now */
+    .apply{
+        width: 40%;
+    }
+
+    .drive{
+        font-size: 20px;
+        padding: 2%;
+        width: 50%;
+    }
+
+    h3{
+        padding-top: 1;
+        padding-bottom: 0;
+    }
+    /* adjusting footer */
+    .calculator{
+        justify-content: left;
+    }
+
+    .hours{
+        padding: 5%;
+    }
+
+    .city{
+        padding: 5%;
+    }
+
+    .calculate{
+        padding: 1px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /* .socials{
+        float: right;
+    } */
+    
+    .number{
+        width: 85%;
+    }
+    .email{
+        width: 85%;
+    }
+    .lastname{
+        width: 85%;
+    }
+    .firstname{
+        width: 85%;
+    }
+    
