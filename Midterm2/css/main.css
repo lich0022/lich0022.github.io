@@ -1,0 +1,28 @@
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0;
+    width: 30%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+h1{
+    background: url("../images/pineapple-sesame-pastries-1-1327665-1920x1440.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 100px;
+    margin: 0;
+}
