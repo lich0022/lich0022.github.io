@@ -1,0 +1,26 @@
+h1{
+    color: purple;
+}
+
+h1, h2, h3{
+    font-weight: normal;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin: 0;
+    width: 30%;
+    padding: 1em;
+    box-sizing: border-box;
+    /* border-right: 1px solid black; */
+}
+
+nav ul li:last-child {
+    border: none;
+}
