@@ -1,7 +1,9 @@
 
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    /* background-image: ; */
+    font-size: 14;
+    /* background-image: */
 }
 /* REMEMBER TO MAKE MOCKUP */
 h1{
@@ -93,9 +95,6 @@ h2{
 .profile{
     background-color: lightgray;
     border-radius: 9px;
-    box-shadow: 5px 10px
-    /* margin-bottom: 1em; */
-    margin: auto;
     text-align: center;
   }
   .profile .team{
@@ -185,3 +184,26 @@ button:hover{
 button{
     transition: 0.3s;
 }
+
+footer{
+    margin-top: 20px;
+  border-top: 2px solid #A1C8CA;
+  padding: 20px;
+}
+
+/* --------------------------
+      Desktop Styles
+---------------------------- */
+
+@media screen and (min-width: 700px) {
+    body{
+      font-size: 20px;
+    }
+
+    .profile{
+        background-color: #A1C8CA;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
+        margin-bottom: 20px;
+    }
