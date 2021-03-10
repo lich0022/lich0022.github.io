@@ -70,9 +70,18 @@ img{
     /* margin-right: 20px; */
 }
 
+
 .doughnuts:hover{
     box-shadow: -2px 2px 3px 2px gray;
     transition: 0.3s;
+}
+
+blockquote p::before{
+    content: '\201C';
+}
+
+blockquote p::after{
+    content: '\201D';
 }
 
 img{
@@ -207,3 +216,22 @@ footer{
         column-gap: 1em;
         margin-bottom: 20px;
     }
+
+    h1{
+        color: blueviolet;
+    }
+
+    @media screen and (min-width: 800px) {
+        .actions-list li {
+          max-width: 20%;
+        }
+        nav{
+            font-size: 25px;
+        }
+
+        h1{
+            background: url(..//images/pastry-baking-samosa-s-2-1523437.jpg);
+            background-size: cover;
+            height: auto;
+            color: black;
+        }
