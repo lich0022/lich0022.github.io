@@ -3,9 +3,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14;
-    /* background-image: */
 }
-/* REMEMBER TO MAKE MOCKUP */
+/* adding h1 text and background image */
+/* adjusting size of background image */
 h1{
     background: url("../images/pineapple-sesame-pastries-1-1327665-1920x1440.jpg");
     background-size: cover;
@@ -26,16 +26,16 @@ nav ul{
     text-align: center;
 }
 
-
+/* setting up responsive sizing to the nav */
 nav ul li{
     display: inline-block;
     margin: 0;
     width: 30%;
     padding: 1em;
     box-sizing: border-box;
-    /* border-right: 1px solid black; */
 }
 
+/* adding color and removing link decorations */
 nav ul a{
     text-decoration: none;
     color: gray;
@@ -43,39 +43,46 @@ nav ul a{
     padding: 5px;
 }
 
-.nav:hover{
-    color: cyan;
-}
-
 nav ul li:last-child {
     border: none;
 }
 
+/* adding hover animations to nav (background color and text color change */
 nav ul a:hover{
     background-color: #A1C8CA;
     color: white;
-    /* transition: color 0.3s; */
-    transition: background 0.3s;
+    transition-property: background;
 }
 
+/* allowing the animation to slowly transition back to normal */
 nav ul a{
     transition: 0.3s;
 }
+
 
 img{
     width: 400px;
     align: center;
     margin-top: 20px;
     border-radius: 9px;
-    /* margin-right: 20px; */
 }
 
-
+/* adding hover animations to the homepage doughnut image (backshadow when mouse is hovering over) */
 .doughnuts:hover{
     box-shadow: -2px 2px 3px 2px gray;
     transition: 0.3s;
 }
+.cookies{
+    display: none;
+}
 
+/* adding hover animations to the homepage cookies image (backshadow when mouse is hovering over) */
+.cookies:hover{
+    box-shadow: -2px 2px 3px 2px gray;
+    transition: 0.3s;
+}
+
+/* adds quotations to homepage quote */
 blockquote p::before{
     content: '\201C';
 }
@@ -84,6 +91,7 @@ blockquote p::after{
     content: '\201D';
 }
 
+/* box shadow animation slowly transitions back to normal */
 img{
     transition: 0.3s;
 }
@@ -94,7 +102,10 @@ h2{
 
 .brief{
     text-align: center;
+    flex-wrap: wrap;
 }
+
+
 
 .about {
     text-align: center;
@@ -113,11 +124,13 @@ h2{
     margin-top: 0;
   }
 
+  /* adding box shadow animation to team profile sections */
   .profile:hover{
     box-shadow: -2px 2px 3px 2px gray;
     transition: 0.3s;
 }
 
+/* animations slowly transitions back to normal */
 .profile{
     transition: 0.3s;
 }
@@ -127,14 +140,17 @@ h3{
     text-align: center;
 }
   
-.contact{
+.location{
     text-align: center;
     background-color: lightgray;
     border-radius: 9px;
     padding-top: 1px;
-    padding-bottom: 20px;
+    height: 400px;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
+/* sizing the imbedded map */
 .map{
     width: 300px;
     height: 300px;
@@ -149,40 +165,49 @@ h3{
     padding: 1.4em;
     width: 100%;
     box-sizing: border-box;
+    height: 400px;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
+/* sizing text boxes and allowing them to be responsive */
 .name{
-    width: 400px;
+    width: 100%;
     padding: 4px;
     margin-bottom: 10px;
     border: none;
     border-radius: 7.5px;
+    box-sizing: border-box;
 }
 
 .email{
-    width: 400px;
+    width: 100%;
     padding: 4px;
     margin-bottom: 10px;
     border: none;
     border-radius: 7.5px;
+    box-sizing: border-box;
 }
 
 .message{
-    width: 400px;
+    width: 100%;
     padding: 20px;
     margin-bottom: 10px;
     border: none;
     border-radius: 7.5px;
+    box-sizing: border-box;
 }
 
+/* style send button */
 button{
-    width: ;
+    /* width: ; */
     background-color: white;
     padding: 4px;
     border: none;
     border-radius: 7.5px;
 }
 
+/* adding hover animation to send button (background and text color change */
 button:hover{
     background-color: #A1C8CA;
     color: white;
@@ -190,10 +215,12 @@ button:hover{
     transition: background 0.3s;
 }
 
+/* button animations transitions back to normal */
 button{
     transition: 0.3s;
 }
 
+/* adding a divider line to the top of the footer */
 footer{
     margin-top: 20px;
   border-top: 2px solid #A1C8CA;
@@ -201,7 +228,7 @@ footer{
 }
 
 /* --------------------------
-      Desktop Styles
+      Tablet Styles
 ---------------------------- */
 
 @media screen and (min-width: 700px) {
@@ -209,17 +236,33 @@ footer{
       font-size: 20px;
     }
 
-    .profile{
-        background-color: #A1C8CA;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1em;
-        margin-bottom: 20px;
+    h1{
+        color: white;
     }
 
-    h1{
-        color: blueviolet;
+    /* making responsive and larger sections for tablet size */
+    .contact{
+        display: flex;
+        margin: auto;
     }
+
+    .location{
+        width: 50%;
+    }
+
+    .form{
+        width: 50%;
+    }
+
+    /* hiding text lines when page gets to certain size */
+    .form h3{
+        display: none;
+    }
+}
+
+/* --------------------------
+      Desktop Styles
+---------------------------- */
 
     @media screen and (min-width: 800px) {
         .actions-list li {
@@ -229,9 +272,59 @@ footer{
             font-size: 25px;
         }
 
+         /* changing h1 background image and text color when page reaches 800px */
         h1{
             background: url(..//images/pastry-baking-samosa-s-2-1523437.jpg);
             background-size: cover;
             height: auto;
             color: black;
         }
+
+        .brief{
+            display: flex;
+        }
+
+        .doughnuts{
+            width: 400px;
+            margin-top: 20px;
+            border-radius: 9px;
+            width: 50%;
+            
+            /* visible the cookies image when page reaches 800px */
+        }
+        .cookies{
+            display: flex;
+            width: 50%;
+            
+            /* changing position of team profiles for desktop sizes */
+        }
+        .team{
+            display: flex;
+        }
+
+        /* profile background color changes when page reaches 800px and higher */
+        .profile{
+            margin-right: 10px;
+            margin-left: 10px;
+            background-color: #A1C8CA;
+            width: 33%;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .contact{
+            justify-content: space-around;
+            max-width: 800px;
+        }
+
+        /* changing background color of each section when it reaches 800px and higher */
+        .location{
+            background-color: #A1C8CA;
+        }
+
+        form{
+            background-color: #A1C8CA;
+        }
+    }
